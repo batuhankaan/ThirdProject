@@ -9,6 +9,10 @@ import deviceVerification from './src/pages/login/deviceVerification'
 import passwordReset from './src/pages/login/passwordReset'
 import Register from './src/pages/register/register'
 import newCustomerForm from './src/pages/register/newCustomerForm'
+import availableCustomerRegister from './src/pages/register/availableCustomerRegister'
+import managerInfo from './src/pages/register/managerInfo'
+import companyInfo from './src/pages/register/companyInfo'
+import documentAdd from './src/pages/register/documentAdd'
 
 const Drawer = createDrawerNavigator();
 
@@ -24,6 +28,10 @@ export default function App() {
         <Drawer.Screen name="passwordReset" component={passwordReset} />
         <Drawer.Screen name="Register" component={Register} />
         <Drawer.Screen name="newCustomerForm" component={newCustomerForm} />
+        <Drawer.Screen name="availableCustomerRegister" component={availableCustomerRegister} />
+        <Drawer.Screen name="managerInfo" component={managerInfo} />
+        <Drawer.Screen name="companyInfo" component={companyInfo} />
+        <Drawer.Screen name="documentAdd" component={documentAdd} />
       </Drawer.Navigator>
     </NavigationContainer>
   );
